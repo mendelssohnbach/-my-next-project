@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -11,10 +12,12 @@ export default function Home() {
           私たちは市場をリードしているグローバルテックカンパニーです。
         </p>
       </div>
-      <img
+      <Image
         className={styles.bgimg}
         src="/img-mv.jpg"
         alt=""
+        width={4000}
+        height={1200}
       />
     </section>
   );
